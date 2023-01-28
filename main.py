@@ -7,7 +7,8 @@ for i in range(len(number)):
         if len(number[i])<3:
             temp = number[i][-1:-4:-1] + temp
         else:
-            temp = number[i][-1:-4:-1] + "," +temp
-        number[i] = number[i][:-4]
+            temp = ","+number[i][-1:-4:-1]+temp
+        number[i] = number[i][:-3]
+    number[i]=temp
         
 print(number)
